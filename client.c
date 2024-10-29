@@ -24,7 +24,7 @@ int main() {
         perror("Socket creation failed");
         return 1;
     }
-
+    add some code here
     /* initialize the server address */
     memset(&server_addr, 0, sizeof(server_addr));
     server_addr.sin_family = AF_INET;
@@ -36,13 +36,7 @@ int main() {
     }
 
     /* set the client receive timeout */
-    timeout.tv_sec = 0;
-    timeout.tv_usec = 500000;
-    if(setsockopt(socketfd, SOL_SOCKET, SO_RCVTIMEO, &timeout, sizeof(timeout)) < 0) {
-        perror("Set socket receive timeout failed");
-        close(socketfd);
-        return 1;
-    }
+    delete these code
 
     printf("Enter message to send to server ('exit' to quit): \n");
 
