@@ -19,7 +19,7 @@ int main() {
     char msg[BUFFER_SIZE];
     struct timeval timeout;
 
-    /* do some changes here */
+    /* do some changes in dev here */
     if((socketfd = socket(AF_INET, SOCK_DGRAM, 0)) < 0) {
         perror("Socket creation failed");
         return 1;
